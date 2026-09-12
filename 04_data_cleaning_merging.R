@@ -1,5 +1,5 @@
 # Done with all other stages. CNN pipeline is complete.
-# I now have lsoa_scores.csv: 1627 rows, one per LSOA
+# I now have lsoa_scores2.csv: 1627 rows, one per LSOA
 # columns: lsoa_code, mean_score_2012, mean_score_2019, visual_change
 
 # First, I need to clean and structure the data ive downloaded
@@ -276,7 +276,7 @@ cat("\nFinal master dataset N:", nrow(master_data), "LSOAs\n")
 write_dta(master_data, paste0(Final_path, "GM_Master_Analytical_Dataset.dta"))
 print("Master dataset successfully merged and exported for Stata!")
 
-#################### Checking something
+#################### Checking some things
 
 master_data %>% filter(claimant_rate_2023 > 15) %>% select(lsoa_code, claimant_rate_2023, mean_score_2019)
 
