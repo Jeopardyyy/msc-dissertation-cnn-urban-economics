@@ -26,7 +26,7 @@ Manchester LSOAs.
 ## Requirements
 - Python 3.x with PyTorch, requests, osmnx, streetview
 - R with tidyverse, haven
-- Stata 17+
+- Stata 16+
 
 ## Note
 Raw imagery and administrative data files are not included due to size and
