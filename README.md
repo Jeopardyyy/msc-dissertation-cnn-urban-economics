@@ -1,4 +1,4 @@
-# Seeing Decline Before It Shows: CNNs & Local Economic Outcomes
+# Seeing Decline Before It Shows: Do CNN-Derived Visual Changes in Google Street View Predict Local Economic Outcomes? Evidence from Greater Manchester
 **MSc Economics and Data Science Dissertation | University of Warwick**
 
 ## Overview
@@ -14,7 +14,7 @@ If you wish to follow the methodology, the scripts should be run in this order:
 6. `Regressions.do` - The Stata do-file running all cross-sectional and long-difference OLS specifications.
 
 ## Data Availability & Sourcing
-The human pairwise comparison data and corresponding images used to train the CNN are based on the MIT Place Pulse 2.0 dataset (Dubey et al., 2016). Since the original MIT servers are frequently inaccessible, the training data for this project was sourced from the open-source mirror provided by the Chinese Academy of Sciences (Min et al., 2020), available [here](https://github.com/minweiqing/Multi-Task-Deep-Relative-Attribute-Learning-for-Visual-Urban-Perception).
+The human pairwise comparison data and corresponding images used to train the CNN are based on the MIT Place Pulse 2.0 dataset (Dubey et al., 2016). Since the original MIT servers are frequently inaccessible, the training data (named "final_data.csv" in step 1 of the pipeline) for this project was sourced from the open-source mirror provided by the Chinese Academy of Sciences (Min et al., 2020), available [here](https://github.com/minweiqing/Multi-Task-Deep-Relative-Attribute-Learning-for-Visual-Urban-Perception).
 
 ## Requirements
 - Python 3.x with PyTorch, requests, osmnx, streetview
