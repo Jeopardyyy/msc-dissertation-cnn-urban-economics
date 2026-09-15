@@ -231,10 +231,7 @@ Final_path <- ".\\data\\Cleaned"
 scores <- read_csv(".\\data\\Outputs\\Scores\\lsoa_scores2.csv")
 
 # Drop LSOAs missing a valid visual_change score (i.e. missing coverage in
-# either 2012 or 2019 after the corrected pano-based download). This is a
-# known, documented consequence of historical Street View coverage gaps -
-# see data section for coverage statistics (1,230/1,673 LSOAs retained
-# pre-merge; final N after merging with outcome/control data below).
+# either 2012 or 2019 after the corrected pano-based download).
 n_before <- nrow(scores)
 scores <- scores %>% filter(!is.na(visual_change))
 n_after <- nrow(scores)
